@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Search</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="contenedor-madre">
+    <div class="container">
+        <div class="form-container">
+            <h1>Buscar Anime</h1>
+            <form id="animeForm">
+                <input type="number" id="limit" name="limit" min="1" max="100" placeholder="numero limite de busqueda">
+                <input type="text" id="search" name="search" placeholder="Nombre del Anime">
+                
+                <select id="type" name="type">
+                    <option value="" disabled selected>Seleccione una opción</option>
+                    <option value="tv">Serie</option>
+                    <option value="movie">Película</option>
+                    <option value="ova">OVA</option>
+                    <option value="special">Especial</option>
+                </select>
+                
+                <div class="button-container">
+                    <button type="button" id="searchBtn">Buscar</button>
+                    <button type="button" id="clearBtn">Limpiar</button>
+                </div>
+            </form>
+        </div>
+        
+        <div id="results" class="results-container"></div>
+    </div>
+
+    <div class="Api-container">
+
+        <h1>Cat Facts</h1>
+        <button id="gato-button">Fetch Cat Fact</button>
+        <div id="gato-container"></div>
+    
+        <h1>US Population</h1>
+        <button id="us-button">Fetch US Population</button>
+        <div id="us-container"></div>
+
+    </div>
+    </div>
+
+    <script src="indexfiltro.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
